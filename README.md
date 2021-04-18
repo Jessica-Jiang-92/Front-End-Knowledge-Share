@@ -14,9 +14,9 @@
 - [3. 讲讲深拷贝与浅拷贝，如何实现，有哪些方式？]()
 - [4. 讲一讲 JavaScript 的垃圾回收机制]()
 - [5. 原型，原型链和继承的关系，如何实现继承？]()
-- [6. 讲讲es6的新特性主要有哪些？](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/11)
-- [7. http协议，缓存协议（强缓存+协商缓存）](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/12)
-- [8. call, bind, apply,三者的关系和区别](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/14)
+- [6. 讲讲es6的新特性主要有哪些？]()
+- [7. http协议，缓存协议（强缓存+协商缓存）](2)
+- [8. call, bind, apply,三者的关系和区别]()
 - [9. 说一说JavaScript的事件循环机制（Event Loop）](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/17)
 - [10. 从输入URL到最终展示页面的过程中发生了什么？](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/19)
 - [11. 你了解内部属性[[class]]吗？内部属性[[Class]]是什么？](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/20)
@@ -42,7 +42,7 @@
 - [4. 路由模式有哪两种？它们的区别是什么？](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/22)
 - [5. 具体详细的讲一讲MVVM数据绑定的原理+实现](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/13)
 - [6. 为什么Vue中不要用index作为key？实际在问diff算法](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/28)
-- 
+-
 
 ## 4. 前端性能优化与webpack
 ### 目录
@@ -71,4 +71,3 @@
 
 - [1. Continuous project building & Automatic Deployment-Jenkins+Docker](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/37)
 - [2. Sharing of Automatic Testing Tools-Cypress](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/33)
-
