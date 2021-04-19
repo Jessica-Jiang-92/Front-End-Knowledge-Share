@@ -9,7 +9,7 @@
 ## 1. JavaScript面试知识点总结
 ### 目录
 
-- [1. JS数据类型有哪些？如何进行类型判断？不同类型的内存图大致是怎样的？]()
+- [1. JS数据类型有哪些？如何进行类型判断？不同类型的内存图大致是怎样的？](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/JavaScript%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%EF%BC%8C%E6%95%B0%E6%8D%AE%E5%86%85%E5%AD%98%E5%9B%BE%E7%AD%89%E7%AD%89.md)
 - [2. 闭包是什么，原理是什么，怎么用？哪些场景下会用到？](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/JavaScript%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/%E9%97%AD%E5%8C%85%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF.md)
 - [3. 讲讲深拷贝与浅拷贝，如何实现，有哪些方式？]()
 - [4. 讲一讲 JavaScript 的垃圾回收机制]()
