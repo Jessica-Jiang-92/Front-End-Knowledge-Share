@@ -1,16 +1,16 @@
 ## Task Overview
 
-### Issue Link
+### Issue链接
 
 Fixes # (issue)
 
-### Task Type
+### 任务类型
 
-Please delete options that are not relevant.
+请删除不想管的选项
 
-- [ ] Fix bug
-- [ ] New Features
-- [ ] Refactoring
+- [ ] 修复bug
+- [ ] 新特性
+- [ ] 重构
 
 ### Task Details (check to reviewer)
 
