@@ -17,21 +17,21 @@
 - [6. 讲讲es6的新特性主要有哪些？]()
 - [7. http协议，缓存协议（强缓存+协商缓存）](2)
 - [8. call, bind, apply,三者的关系和区别]()
-- [9. 说一说JavaScript的事件循环机制（Event Loop）](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/17)
-- [10. 从输入URL到最终展示页面的过程中发生了什么？](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/19)
-- [11. 你了解内部属性[[class]]吗？内部属性[[Class]]是什么？](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/20)
-- [12. 你使用过node吗？在你做过的项目中有哪些node的应用？](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/21)
-- [13. 讲一讲JavaScript设计模式中的单例模式](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/31)
-- [14. ES6的箭头函数中this有什么特点？](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/32)
+- [9. 说一说JavaScript的事件循环机制（Event Loop）]()
+- [10. 从输入URL到最终展示页面的过程中发生了什么？]()
+- [11. 你了解内部属性[[class]]吗？内部属性[[Class]]是什么？]()
+- [12. 你使用过node吗？在你做过的项目中有哪些node的应用？]()
+- [13. 讲一讲JavaScript设计模式中的单例模式]()
+- [14. ES6的箭头函数中this有什么特点？]()
 
 
 ## 2. CSS
 ### 目录
 
-- [1. 垂直居中的几种实现方案 ](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/7)
-- [2. 你能用几种方案实现双栏布局？](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/8)
-- [3. CSS选择器的优先级顺序是怎样的呢？](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/25)
-- [4. display: none和visibility: hidden的区别](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/26)
+- [1. 垂直居中的几种实现方案 ]()
+- [2. 你能用几种方案实现双栏布局？]()
+- [3. CSS选择器的优先级顺序是怎样的呢？]()
+- [4. display: none和visibility: hidden的区别]()
 
 
 ## 3. Vue相关
