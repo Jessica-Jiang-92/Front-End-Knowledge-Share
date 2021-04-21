@@ -18,7 +18,7 @@
 - [7. http协议，缓存协议（强缓存+协商缓存）](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/JavaScript%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/http%E5%8D%8F%E8%AE%AE%2B%E7%BC%93%E5%AD%98%E5%8D%8F%E8%AE%AE.md)
 - [8. call, bind, apply,三者的关系和区别](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/JavaScript%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/call%2Cbind%2Capply%E4%B8%89%E8%80%85%E7%9A%84%E5%85%B3%E7%B3%BB%E5%92%8C%E5%8C%BA%E5%88%AB.md)
 - [9. 说一说JavaScript的事件循环机制（Event Loop）](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/JavaScript%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF%E6%9C%BA%E5%88%B6.md)
-- [10. 从输入URL到最终展示页面的过程中发生了什么？]()
+- [10. 从输入URL到最终展示页面的过程中发生了什么？](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/JavaScript%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/%E4%BB%8E%E8%BE%93%E5%85%A5URL%E5%88%B0%E6%9C%80%E7%BB%88%E5%B1%95%E7%A4%BA%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%BF%87%E7%A8%8B%E4%B8%AD%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88.md)
 - [11. 你了解内部属性[[class]]吗？内部属性[[Class]]是什么？]()
 - [12. 你使用过node吗？在你做过的项目中有哪些node的应用？]()
 - [13. 讲一讲JavaScript设计模式中的单例模式]()
