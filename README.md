@@ -36,12 +36,12 @@
 
 ## 3. Vue相关
 ### 目录
-- [1. Vue的生命周期有哪些？每个周期内完成的功能是什么？](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/6)
-- [2. 具体详细的讲一讲MVVM数据绑定的原理+实现](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/13)
-- [3. 介绍一下Vue与React之间有什么相同点与不同点](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/15)
-- [4. 路由模式有哪两种？它们的区别是什么？](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/22)
-- [5. 具体详细的讲一讲MVVM数据绑定的原理+实现](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/13)
-- [6. 为什么Vue中不要用index作为key？实际在问diff算法](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/28)
+- [1. Vue的生命周期有哪些？每个周期内完成的功能是什么？]()
+- [2. 具体详细的讲一讲MVVM数据绑定的原理+实现]()
+- [3. 介绍一下Vue与React之间有什么相同点与不同点]()
+- [4. 路由模式有哪两种？它们的区别是什么？]()
+- [5. 具体详细的讲一讲MVVM数据绑定的原理+实现]()
+- [6. 为什么Vue中不要用index作为key？实际在问diff算法]()
 -
 
 ## 4. 前端性能优化与webpack
