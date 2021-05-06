@@ -47,10 +47,10 @@
 
 - [1. webpack中有哪些常用的plugin，分别是什么作用？]()
 - [2. 你应该知道的几个webpack优化方法]()
-- [3. 讲一讲你知道的前端性能优化方案](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/18)
-- [4. 讲一讲防抖与节流](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/23)
-- [5. 如何最大程度的优化webpack打包速度？](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/27)
-- [6. hash，contenthash，chunkhash的区别](https://github.com/JCHappytime/Front-End-Interview-Vue/issues/29)
+- [3. 讲一讲你知道的前端性能优化方案]()
+- [4. 讲一讲防抖与节流]()
+- [5. 如何最大程度的优化webpack打包速度？]()
+- [6. hash，contenthash，chunkhash的区别]()
 
 ## 5. 算法
 几乎在所有大厂的面试中，算法是面试者（无论前端还是后端）永远无法逃避的一个重点内容。
