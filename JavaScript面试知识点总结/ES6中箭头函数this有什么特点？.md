@@ -60,11 +60,12 @@ var obj = {
 obj.fn();
 console.log(obj.value); // 0
 
-我们将代码修改了一下，在 obj.fn 方法内增加了一个函数 f ，并将 obj.value 加 1 的动作放到了函数 f 中。但是由于 javascript 语言设计上的一个错误，
-函数 f 中的 this 并不是 方法 obj.fn 中的 this，导致我们没法获取到 obj.value 。
+我们将代码修改了一下，在 obj.fn 方法内增加了一个函数 f ，并将 obj.value 加 1 的动作放到了函数 f 中。
+但是由于 javascript 语言设计上的一个错误，函数 f 中的 this 并不是 方法 obj.fn 中的 this，导致我们没
+法获取到 obj.value 。
 ```
-为了解决此类问题，在 ES5 中，我们通常会将外部函数中的`this`赋值给一个临时变量（通常命名为 that、_this、self），在内层函数中若希望使用外层函数的
-this 时，通过这个临时变量来获取。修改代码如下：
+为了解决此类问题，在 ES5 中，我们通常会将外部函数中的`this`赋值给一个临时变量（通常命名为 that、_this、self），
+在内层函数中若希望使用外层函数的this 时，通过这个临时变量来获取。修改代码如下：
 ```
 var obj = {
   value:0,
