@@ -85,7 +85,28 @@ console.log(obj.value); // 1
 ```
 箭头函数this的定义：箭头函数体内的 this 对象就是定义时所在的对象，而不是使用时所在的对象。
 
-
+怎么理解这个定义呢？
+```
+function fn(){
+  let f = ()=>{
+    console.log(this)
+  }
+}
+```
+我们将上述代码通过babel转换成ES5格式的代码，如下：
+```
+function fn(){
+var _this=this;
+var f = function f() {
+  console.log(_this);
+  };
+}
+```
+我们发现居然和之前在 ES5 中解决内层函数获取外层函数 this 的方法一样，定义一个临时变量_this。
+那么箭头函数的this哪里去了，答案是：箭头函数根本没有自己的this。
+总结一下就是：
+- 箭头函数的外层如果有普通函数，那么箭头函数的 this 就是外层普通函数的this
+- 箭头函数的外层如果没有普通函数，那么箭头函数的 this 就是全局变量
 
 
 
