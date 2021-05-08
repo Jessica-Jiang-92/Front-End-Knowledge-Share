@@ -226,6 +226,13 @@ f2.bind(obj)() // window_name
 我们知道箭头函数是属于 AssignmentExpression 的一种，而函数调用属于 CallExpression，规范中要求当 CallExpression 时，
 左边的表达式必须是 MemberExpression 或其他的 CallExpression，而箭头函数不属于这两种表达式，所以在编译时就会报错。
 
+## 4. 面试题目
+
+
+
+
+
+
 
 
 
