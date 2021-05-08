@@ -169,6 +169,7 @@ console.log(obj.fn())
 ## 2. 箭头函数碰上call, apply, bind
 
 箭头函数中根本没有自己的 this ,那么当箭头函数碰到 call、apply、bind 时，会发生什么呢？
+我们知道，call 和 apply 的作用是改变函数 this 的指向，传递参数，并将函数执行， 而 bind 的作用是生成一个绑定 this 并预设函数参数的新函数。
 
 
 
