@@ -125,8 +125,46 @@ console.log(obj.fn()())
 
 从这个例子，我们可以看出，箭头函数的 this 与外层函数的 this 是相等的。
 ```
+继续看一个多层箭头函数嵌套的例子：
+```
+let obj = {
+    fn:function(){
+        console.log('我是普通函数',this === obj)
+        return ()=>{
+            console.log('第一个箭头函数',this === obj)
+            return ()=>{
+                console.log('第二个箭头函数',this === obj)
+                return ()=>{
+                    console.log('第三个箭头函数',this === obj)
+                }
+            }
+        }
+    }
+}
 
+console.log(obj.fn()()()())
+// 我是普通函数 true
+// 第一个箭头函数 true
+// 第二个箭头函数 true
+// 第三个箭头函数 true
 
+在这个例子中，我们知道，对于箭头函数来说，箭头函数的 this 与外层的第一个普通函数的 this 相等，与嵌套了几层箭头函数无关。
+```
+再来看一个没有外层函数的例子：
+```
+let obj = {
+    fn:()=>{
+        console.log(this === window);
+    }
+}
+console.log(obj.fn())
+
+// true
+
+这个例子证明了：在箭头函数外层没有普通函数时，箭头函数的 this 与全局对象相等。
+
+需要注意的是，浏览器环境下全局对象为 window，node 环境下全局对象为 global，验证的时候需要区分一下。
+```
 
 
 
