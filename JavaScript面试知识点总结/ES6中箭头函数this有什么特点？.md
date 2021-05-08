@@ -168,7 +168,7 @@ console.log(obj.fn())
 
 ## 2. 箭头函数碰上call, apply, bind
 
-
+箭头函数中根本没有自己的 this ,那么当箭头函数碰到 call、apply、bind 时，会发生什么呢？
 
 
 
