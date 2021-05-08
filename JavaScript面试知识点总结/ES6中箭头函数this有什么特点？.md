@@ -197,6 +197,35 @@ f2.bind(obj)() // window_name
 
 ## 3. 自执行函数
 
+在 ES6 的箭头函数出现之前，自执行函数一般会写成这样：
+```
+(function(){
+    console.log(1)
+})()
+```
+或者
+```
+(function(){
+    console.log(1)
+}())
+```
+箭头函数当然也可以被用作自执行函数，可以这样写：
+```
+(() => {
+    console.log(1)
+})()
+```
+但是，下面这种写法会报错：
+```
+(() => {
+    console.log(1)
+}())
+```
+那么，为什么会报错呢？
+
+我们知道箭头函数是属于 AssignmentExpression 的一种，而函数调用属于 CallExpression，规范中要求当 CallExpression 时，
+左边的表达式必须是 MemberExpression 或其他的 CallExpression，而箭头函数不属于这两种表达式，所以在编译时就会报错。
+
 
 
 
