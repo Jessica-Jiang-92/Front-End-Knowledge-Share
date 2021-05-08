@@ -107,6 +107,25 @@ var f = function f() {
 总结一下就是：
 - 箭头函数的外层如果有普通函数，那么箭头函数的 this 就是外层普通函数的this
 - 箭头函数的外层如果没有普通函数，那么箭头函数的 this 就是全局变量
+下面举几个例子：
+```
+let obj = {
+    fn:function(){
+        console.log('我是普通函数',this === obj)
+        return ()=>{
+            console.log('我是箭头函数',this === obj)
+        }
+    }
+}
+
+console.log(obj.fn()())
+
+// 我是普通函数 true
+// 我是箭头函数 true
+
+从这个例子，我们可以看出，箭头函数的 this 与外层函数的 this 是相等的。
+```
+
 
 
 
