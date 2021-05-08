@@ -195,6 +195,8 @@ f2.bind(obj)() // window_name
 普通函数的 this 指向是动态可变的，所以在对 f1 使用 call、apply、bind 时，f1 内部的 this 指向会发生改变。
 箭头函数的 this 指向在其定义时就已确定，永远不会发生改变，所以在对 f2 使用 call、apply、bind 时，会忽略传入的上下文参数。
 
+## 3. 自执行函数
+
 
 
 
