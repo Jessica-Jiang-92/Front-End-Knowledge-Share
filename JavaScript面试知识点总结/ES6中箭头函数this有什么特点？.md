@@ -170,7 +170,30 @@ console.log(obj.fn())
 
 箭头函数中根本没有自己的 this ,那么当箭头函数碰到 call、apply、bind 时，会发生什么呢？
 我们知道，call 和 apply 的作用是改变函数 this 的指向，传递参数，并将函数执行， 而 bind 的作用是生成一个绑定 this 并预设函数参数的新函数。
+所以：
+- 对箭头函数使用call/apply方法时，只会传入参数并调用函数，并不会改变箭头函数中this的指向。
+- 当对箭头函数使用bind方法时，只会返回一个预设参数的新函数，并不会绑定新函数的this指向。
+我们看下面的代码：
+```
+window.name = 'window_name';
 
+let f1 = function(){return this.name}
+let f2 = ()=> this.name
+
+let obj = {name:'obj_name'}
+
+f1.call(obj) // obj_name
+f2.call(obj) // window_name
+
+f1.apply(obj) // obj_name
+f2.apply(obj) // window_name
+
+f1.bind(obj)() // obj_name
+f2.bind(obj)() // window_name
+```
+这里，我们声明了普通函数 f1，箭头函数 f2。
+普通函数的 this 指向是动态可变的，所以在对 f1 使用 call、apply、bind 时，f1 内部的 this 指向会发生改变。
+箭头函数的 this 指向在其定义时就已确定，永远不会发生改变，所以在对 f2 使用 call、apply、bind 时，会忽略传入的上下文参数。
 
 
 
