@@ -228,7 +228,7 @@ f2.bind(obj)() // window_name
 
 ## 4. 面试题目
 
-
+在面试中关于箭头函数的考察，主要集中在 arguments 关键字的指向和箭头函数的this指向上。
 
 
 
