@@ -261,5 +261,26 @@ a.bar() // 输出结果是多少
 箭头函数没有自己的 this，所以箭头函数的 this 等价于外层非箭头函数作用域的this。 由于箭头函数的外层没有普通函数，
 所以箭头函数中的 this 等价于全局对象，所以输出为 undefined。
 
+- 题目3
+```
+let res = (function pt() {
+  return (() => this.x).bind({ x: 'inner' })();
+}).call({ x: 'outer' });
+
+console.log(res)  // 输出什么
+```
+![3](https://user-images.githubusercontent.com/82437559/117522150-4df15d00-afe4-11eb-99a3-a8c3137d0fd6.png)
+
+分析如下：
+1. 求函数 pt 通过 call 调用后的返回值。
+2. pt 函数内的 this 被 call 转换为 {x:'outer'}。
+3. pt 函数内，箭头函数通过 bind 生成了新函数，并执行，执行结果为 pt 函数的返回值。
+4. 箭头函数中的 this 无法通过 bind 方法绑定，箭头函数执行时的 this 就是外层作用域的 this。
+5. 箭头函数执行时，外层作用域的 this 是由 call 方法指定的 {x:'outer'}。
+6. 最终结果 res 为 'outer'。
+
+
+
+
 
 
