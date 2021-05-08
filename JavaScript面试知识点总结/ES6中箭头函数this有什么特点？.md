@@ -230,7 +230,7 @@ f2.bind(obj)() // window_name
 
 在面试中关于箭头函数的考察，主要集中在 arguments 关键字的指向和箭头函数的this指向上。
 
-题目一：
+- 题目1
 ```
 function foo(n) {
   var f = () => arguments[0] + n;
@@ -245,9 +245,21 @@ console.log(res); // 输出结果是什么？
 
 箭头函数没有自己的 arguments ，所以题中的 arguments 指代的是 foo 函数的arguments对象。所以arguments[0]等于2，n 等于2，结果为4。
 
+- 题目2
+```
+function A() {
+  this.foo = 1
+}
 
+A.prototype.bar = () => console.log(this.foo)
 
+let a = new A()
+a.bar() // 输出结果是多少
+```
+![2](https://user-images.githubusercontent.com/82437559/117522090-fb17a580-afe3-11eb-81ea-7dc583468644.png)
 
+箭头函数没有自己的 this，所以箭头函数的 this 等价于外层非箭头函数作用域的this。 由于箭头函数的外层没有普通函数，
+所以箭头函数中的 this 等价于全局对象，所以输出为 undefined。
 
 
 
