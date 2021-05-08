@@ -243,7 +243,7 @@ console.log(res); // 输出结果是什么？
 ```
 ![1](https://user-images.githubusercontent.com/82437559/117522024-83497b00-afe3-11eb-879a-9ec7ca337500.png)
 
-箭头函数没有自己的 arguments ，所以题中的 arguments 指代的是 foo 函数的 arguments 对象。所以 arguments[0] 等于 2 ，n 等于 2，结果为 4。
+箭头函数没有自己的 arguments ，所以题中的 arguments 指代的是 foo 函数的arguments对象。所以arguments[0]等于2，n 等于2，结果为4。
 
 
 
