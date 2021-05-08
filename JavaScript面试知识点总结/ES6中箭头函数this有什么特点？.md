@@ -230,6 +230,20 @@ f2.bind(obj)() // window_name
 
 在面试中关于箭头函数的考察，主要集中在 arguments 关键字的指向和箭头函数的this指向上。
 
+题目一：
+```
+function foo(n) {
+  var f = () => arguments[0] + n;
+  return f();
+}
+
+let res = foo(2);
+
+console.log(res); // 输出结果是什么？
+```
+![1](https://user-images.githubusercontent.com/82437559/117522024-83497b00-afe3-11eb-879a-9ec7ca337500.png)
+
+箭头函数没有自己的 arguments ，所以题中的 arguments 指代的是 foo 函数的 arguments 对象。所以 arguments[0] 等于 2 ，n 等于 2，结果为 4。
 
 
 
