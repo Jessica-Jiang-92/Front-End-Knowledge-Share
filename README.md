@@ -23,7 +23,6 @@
 - [13. 讲一讲JavaScript设计模式中的单例模式](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/JavaScript%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%AD%E7%9A%84%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md)
 - [14. ES6的箭头函数中this有什么特点？](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/JavaScript%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/ES6%E4%B8%AD%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0this%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9%EF%BC%9F.md)
 
-
 ## 2. CSS
 ### 目录
 
@@ -31,7 +30,6 @@
 - [2. 你能用几种方案实现双栏布局？](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/CSS%E7%9B%B8%E5%85%B3/%E5%8F%8C%E6%A0%8F%E5%B8%83%E5%B1%80.md)
 - [3. CSS选择器的优先级顺序是怎样的呢？](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/CSS%E7%9B%B8%E5%85%B3/%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7%E9%A1%BA%E5%BA%8F.md)
 - [4. display: none和visibility: hidden的区别](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/CSS%E7%9B%B8%E5%85%B3/display:%20none%E5%92%8Cvisibility:%20hidden%E7%9A%84%E5%8C%BA%E5%88%AB.md)
-
 
 ## 3. Vue相关
 ### 目录
@@ -75,7 +73,6 @@
 - [1. Continuous project building & Automatic Deployment-Jenkins+Docker](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/Continuous%20project%20building%20%26%20Automatic%20Deployment-Jenkins%2BDocker.md)
 - [2. Sharing of Automatic Testing Tools-Cypress](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/Sharing%20of%20Automatic%20Testing%20Tools-Cypress.md)
 - 2. Sharing of Automatic Testing Tools-Puppeteer
-
 
 
 
