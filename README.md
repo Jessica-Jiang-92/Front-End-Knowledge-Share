@@ -62,7 +62,7 @@
 - [2. 统计一个字符串出现最多的字母：给出一段英文连续的英文字符串，找出重复出现次数最多的字母](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/%E7%AE%97%E6%B3%95/%E7%BB%9F%E8%AE%A1%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BA%E7%8E%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AD%97%E6%AF%8D.md)
 - [3. 斐波那契数列：1、1、2、3、5、8、13、21。输入n，输出数列中第n位数的值。](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/%E7%AE%97%E6%B3%95/fibonacci.md)
 - [4. 动态规划算法之背包问题](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95.md)
-- [5. 动态规划算法之完全背包问题](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/%E7%AE%97%E6%B3%95/%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98.md)
+- [5. 动态规划算法之完全背包问题](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/%E7%AE%97%E6%B3%95/Complete-Backpack-Problem.md)
 
 ## 6. 工具分享
 
