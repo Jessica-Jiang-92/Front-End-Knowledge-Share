@@ -164,12 +164,6 @@ findKnapsack(weights, values, W) {
 
 我们验证一下就明白：当最优解是15时，选择的物品就是第0，1，4件。
 
-
-
-
-
-
-
 ## 参考
 
 [1. 动态规划解决背包问题-JavaScript](https://segmentfault.com/a/1190000012829866)
