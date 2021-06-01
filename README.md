@@ -75,5 +75,6 @@
 - [2. Sharing of Automatic Testing Tools-Cypress](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/Sharing%20of%20Automatic%20Testing%20Tools-Cypress.md)
 - [Sharing of Automatic Testing Tools-Puppeteer]()
 - [Headless Recorder的扩展程序，可以快速地体验Puppeteer的运行方式，用于记录用户在页面上的点击行为和事件](https://chrome.google.com/webstore/detail/headless-recorder/djeegiggegleadkkbgopoonhjimgehda)
+[Headless Recorder开发的源码](https://github.com/checkly/headless-recorder)
 
 
