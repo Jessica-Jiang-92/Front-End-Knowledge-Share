@@ -82,5 +82,5 @@
 - [获取设计灵感的Repo：设计系统目录和样式的指南，图案库，相关文件和会议等](https://designsystemsrepo.com/design-systems)
 - [关于ECMScript近十年内发展变化的内容](https://turriate.com/articles/modern-javascript-everything-you-missed-over-10-years)
 - [富文本编辑](https://www.smashingmagazine.com/2021/05/building-wysiwyg-editor-javascript-slatejs/)
-
+- [How to Create Actions for Selected Text With the Selection API(使用选中API实现当选择了文本之后的动作)](https://css-tricks.com/how-to-create-actions-for-selected-text-with-the-selection-api/)
 
