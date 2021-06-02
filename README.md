@@ -79,5 +79,7 @@
 - [Headless Recorder的扩展程序，可以快速地体验Puppeteer的运行方式，用于记录用户在页面上的点击行为和事件](https://chrome.google.com/webstore/detail/headless-recorder/djeegiggegleadkkbgopoonhjimgehda)
 1. [Headless Recorder开发的源码](https://github.com/checkly/headless-recorder)
 2. 亚马逊也参考了Headless Recorder的源码，实现了自己的[CloudWatch Synthetics](https://docs.aws.amazon.com/zh_cn/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_Recorder.html)。
+- [获取设计灵感的Repo：设计系统目录和样式的指南，图案库，相关文件和会议等](https://designsystemsrepo.com/design-systems)
+
 
 
