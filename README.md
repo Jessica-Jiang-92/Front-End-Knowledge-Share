@@ -81,6 +81,6 @@
 2. 亚马逊也参考了Headless Recorder的源码，实现了自己的[CloudWatch Synthetics](https://docs.aws.amazon.com/zh_cn/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_Recorder.html)。
 - [获取设计灵感的Repo：设计系统目录和样式的指南，图案库，相关文件和会议等](https://designsystemsrepo.com/design-systems)
 - [关于ECMScript近十年内发展变化的内容](https://turriate.com/articles/modern-javascript-everything-you-missed-over-10-years)
-
+- [富文本编辑](https://www.smashingmagazine.com/2021/05/building-wysiwyg-editor-javascript-slatejs/)
 
 
