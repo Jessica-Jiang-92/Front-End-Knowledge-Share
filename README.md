@@ -86,3 +86,6 @@
 - [Introducing WebContainers: Run Node.js natively in your browser](https://blog.stackblitz.com/posts/introducing-webcontainers/)
 Github源码地址：[Repo Link](https://github.com/stackblitz/webcontainer-core/blob/main/Supported_frameworks.md)
 - [Map of JavaScript，学习JS的一个技术地图](https://github.com/mechaniac/Map-of-Javascript)
+- [Kubernetes学习文档](https://kubernetes.io/docs/home/)，对于前端开发而言似乎很多人认为我们并不需要了解K8s相关的内容，其实恰恰相反。
+
+
