@@ -89,5 +89,5 @@ Github源码地址：[Repo Link](https://github.com/stackblitz/webcontainer-core
 - [Kubernetes学习文档](https://kubernetes.io/docs/home/)，对于前端开发而言似乎很多人认为我们并不需要了解K8s相关的内容，其实恰恰相反。
 - [Cloud Native的定义](https://github.com/cncf/toc/blob/main/DEFINITION.md)
 - [k8s Job Resource](https://kubernetes.io/docs/concepts/workloads/controllers/job/)
-- [开发谷歌浏览器插件-中文文档](https://open.chrome.360.cn/extension_dev/manifest.html)[开发谷歌浏览器插件-英文文档](https://developer.chrome.com/docs/extensions/mv3/getstarted/)
+- 中文文档：[开发谷歌浏览器插件](https://open.chrome.360.cn/extension_dev/manifest.html)，英文文档：[开发谷歌浏览器插件](https://developer.chrome.com/docs/extensions/mv3/getstarted/)
 
