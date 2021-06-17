@@ -67,7 +67,7 @@
 - [4. 动态规划算法之背包问题（0-1问题）](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/%E7%AE%97%E6%B3%95/Backpack-Problem(0-1-problem).md)
 - [5. 动态规划算法之完全背包问题](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/%E7%AE%97%E6%B3%95/Complete-Backpack-Problem.md)
 
-## 6. 工具分享
+## 🏗️ 6. 工具分享
 
 前端知识确实庞大且繁杂，但实际工作中除了对基础知识的要求之外，项目整体自动化构建及自动化测试也成了不可缺少的技术栈。
 
