@@ -47,7 +47,8 @@ Cookie是写入浏览器的一小段信息，只有同源的网页才能共享�
 ```
 document.domain = 'example.com';
 ```
-
+现在，A网页通过脚本设置一个Cookie，如`document.cookie = 'hello, I am cookie';`
+B网页在此时就可以读到这个Cookie，`var cookie = document.cookie;`
 
 
 
