@@ -41,9 +41,12 @@
 
 ### 4.1 Cookie
 
-Cookie是写入浏览器的一小段信息，只有同源的网页才能共享。但是，两个网页一级域名相同，只是耳机域名不同，浏览器允许通过设置`document.domain`共享Cookie.
+Cookie是写入浏览器的一小段信息，只有同源的网页才能共享。但是，两个网页一级域名相同，只是耳机域名不同，浏览器允许通过设置`document.domain`共享Cookie。
 
-
+举个例子：A网页是`http://test.example.com/a`，B网页是`http://test.example.com/b`，那么只要设置相同的`document.domain`，两个网页就可以共享Cookie。
+```
+document.domain = 'example.com';
+```
 
 
 
