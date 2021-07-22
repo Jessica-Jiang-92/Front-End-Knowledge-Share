@@ -48,7 +48,10 @@ Cookie是写入浏览器的一小段信息，只有同源的网页才能共享�
 document.domain = 'example.com';
 ```
 现在，A网页通过脚本设置一个Cookie，如`document.cookie = 'hello, I am cookie';`
+
 B网页在此时就可以读到这个Cookie，`var cookie = document.cookie;`
+
+但需要注意的是：这种方法只适用于Cookie和iframe窗口，LocalStorage和IndexDB无法通过这种方法，规避同源策略，而要使用PostMessage API来实现。
 
 
 
