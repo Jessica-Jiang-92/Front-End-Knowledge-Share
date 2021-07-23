@@ -114,6 +114,15 @@ var data = document.getElementById('myFrame').contentWindow.name;
 ```
 这种方法的优点是，`window.name`容量很大，可以放置非常长的字符串；缺点是必须监听子窗口`window.nam`e属性的变化，影响网页性能。
 
+#### (3) window.postMessage
+
+
+
+
+
+
+
+
 
 
 
