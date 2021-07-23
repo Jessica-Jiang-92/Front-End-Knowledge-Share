@@ -79,6 +79,25 @@ window.parent.document.body
 
 #### (1) 片段识别符
 
+片段标识符（fragment identifier）指的是，URL的#号后面的部分，比如`http://example.com/x.html#fragment`的#fragment。如果只是改变片段标识符，页面不会重新刷新。
+父窗口可以把信息，写入子窗口的片段标识符。
+```
+var src = originURL + '#' + data;
+document.getElementById('myIFrame').src = src;
+```
+子窗口通过监听`hashchange`事件得到通知。
+```
+window.onhashchange = checkMessage;
+
+function checkMessage() {
+  var message = window.location.hash;
+  // ...
+}
+```
+同样的，子窗口也可以改变父窗口的片段标识符。
+
+
+
 
 
 
