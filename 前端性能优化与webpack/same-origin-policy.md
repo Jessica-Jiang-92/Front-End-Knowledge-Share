@@ -77,6 +77,7 @@ window.parent.document.body
 - window.name
 - 跨文档通信API（Cross-document messaging）
 
+#### (1) 片段识别符
 
 
 
