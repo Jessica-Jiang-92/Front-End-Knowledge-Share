@@ -116,10 +116,18 @@ var data = document.getElementById('myFrame').contentWindow.name;
 
 #### (3) window.postMessage
 
-
-
-
-
+上面两种方法都属于破解，HTML5为了解决这个问题，引入了一个全新的API：跨文档通信 API（Cross-document messaging）。
+这个API为`window`对象新增了一个`window.postMessage`方法，允许跨窗口通信，不论这两个窗口是否同源。
+举例来说，父窗口`http://parent.com`向子窗口`http://children.com`发消息，调用postMessage方法就可以了。
+```
+var popup = window.open('http://children.com', 'title');
+popup.postMessage('Hello World!', 'http://children.com');
+```
+`postMessage`方法的第一个参数是具体的信息内容，第二个参数是接收消息的窗口的源（origin），即"协议 + 域名 + 端口"。也可以设为*，表示不限制域名，向所有窗口发送。
+子窗口向父窗口发送消息的写法类似。
+```
+window.opener.postMessage('Nice to see you', 'http://parent.com');
+```
 
 
 
