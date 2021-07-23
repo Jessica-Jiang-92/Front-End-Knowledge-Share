@@ -147,6 +147,18 @@ function receiveMessage(event) {
 }
 ```
 `event.origin`属性可以过滤不是发给本窗口的消息。
+```
+window.addEventListener('message', receiveMessage);
+function receiveMessage(event) {
+  if (event.origin !== 'http://parent.com') return;
+  if (event.data === 'Hello World') {
+      event.source.postMessage('Hello', event.origin);
+  } else {
+    console.log(event.data);
+  }
+}
+```
+#### (4) LocalStorage
 
 
 
