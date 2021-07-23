@@ -63,7 +63,8 @@ Set-Cookie: key=value; domain=.example.com; path=/
 
 比如，父窗口下运行命令，如果`iframe`窗口不是同源，就会报错。
 ```
-
+document.getElementById("myIFrame").contentWindow.document
+// Uncaught DOMException: Blocked a frame from accessing a cross-origin frame.
 ```
 
 
