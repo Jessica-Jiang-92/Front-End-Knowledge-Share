@@ -61,7 +61,10 @@ Set-Cookie: key=value; domain=.example.com; path=/
 
 如果两个网页不同源，就无法拿到对方的DOM。典型的例子就是`iframe`和`window.open`方法打开的窗口，它们与父窗口无法通信。
 
+比如，父窗口下运行命令，如果`iframe`窗口不是同源，就会报错。
+```
 
+```
 
 
 
