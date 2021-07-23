@@ -139,6 +139,20 @@ window.addEventListener('message', function(e) {
 - event.origin: 消息发向的网址
 - event.data: 消息内容
 
+下面的例子是，子窗口通过`event.source`属性引用父窗口，然后发送消息。
+```
+window.addEventListener('message', receiveMessage);
+function receiveMessage(event) {
+  event.source.postMessage('Nice to see you!', '*');
+}
+```
+`event.origin`属性可以过滤不是发给本窗口的消息。
+
+
+
+
+
+
 
 
 
