@@ -66,7 +66,11 @@ Set-Cookie: key=value; domain=.example.com; path=/
 document.getElementById("myIFrame").contentWindow.document
 // Uncaught DOMException: Blocked a frame from accessing a cross-origin frame.
 ```
-
+上面的命令中，父窗口想获取子窗口的DOM，因为跨源导致报错。反之亦然，子窗口获取主窗口的DOM也会报错。
+```
+window.parent.document.body
+// 报错
+```
 
 
 
