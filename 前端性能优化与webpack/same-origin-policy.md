@@ -51,8 +51,7 @@ document.domain = 'example.com';
 
 B网页在此时就可以读到这个Cookie，`var cookie = document.cookie;`
 
-但需要注意的是：这种方法只适用于Cookie和iframe窗口，LocalStorage和IndexDB无法通过这种方法，规避同源策略，而要使用PostMessage API来实现。
-
+但需要注意的是：这种方法只适用于Cookie和iframe窗口，LocalStorage和IndexDB无法通过这种方法，规避同源策略，而要使用PostMessage API来实现。另外，服务器也可以在设置Cookie的时候，指定Cookie的所属域名为一级域名，比如：`.example.com`。
 
 
 
