@@ -57,7 +57,7 @@ Set-Cookie: key=value; domain=.example.com; path=/
 ```
 这样一来，二级和三级域名不用做任何设置，都可以读取这个Cookie。
 
-### iframe
+### 4.2 iframe
 
 
 
