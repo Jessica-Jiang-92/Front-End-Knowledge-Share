@@ -128,11 +128,16 @@ popup.postMessage('Hello World!', 'http://children.com');
 ```
 window.opener.postMessage('Nice to see you', 'http://parent.com');
 ```
-
-
-
-
-
+父窗口和子窗口都可以通过`message事件`，监听对方的消息。
+```
+window.addEventListener('message', function(e) {
+  console.log(e.data);
+},false);
+```
+`message`事件的事件对象`event`，提供以下三个属性:
+- event.source：发送消息的窗口
+- event.origin: 消息发向的网址
+- event.data: 消息内容
 
 
 
