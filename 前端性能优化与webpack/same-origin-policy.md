@@ -98,10 +98,17 @@ function checkMessage() {
 ```
 parent.location.href= target + "#" + hash;
 ```
-
-
-
-
+#### (2) window.name
+浏览器窗口有`window.name`属性。这个属性的最大特点是，无论是否同源，只要在同一个窗口里，前一个网页设置了这个属性，后一个网页可以读取它。
+父窗口先打开一个子窗口，载入一个不同源的网页，该网页将信息写入`window.name`属性。
+```
+window.name = data;
+```
+接着，子窗口跳回一个与主窗口同域的网址。
+```
+location = 'http://www.baidu.com/parent';
+```
+然后，主窗口就可以读取子窗口的window.name了。
 
 
 
