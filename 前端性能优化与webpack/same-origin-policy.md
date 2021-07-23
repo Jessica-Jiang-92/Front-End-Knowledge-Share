@@ -71,8 +71,11 @@ document.getElementById("myIFrame").contentWindow.document
 window.parent.document.body
 // 报错
 ```
-
-
+如果两个窗口一级域名相同，只是二级域名不同，那么设置上一节介绍的`document.domain`属性，就可以规避同源政策，拿到DOM。
+对于完全不同源的网站，目前有三种方法，可以解决跨域窗口的通信问题。
+- 片段识别符（fragment identifier）
+- window.name
+- 跨文档通信API（Cross-document messaging）
 
 
 
