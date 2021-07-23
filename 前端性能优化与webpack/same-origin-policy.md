@@ -95,7 +95,9 @@ function checkMessage() {
 }
 ```
 同样的，子窗口也可以改变父窗口的片段标识符。
-
+```
+parent.location.href= target + "#" + hash;
+```
 
 
 
