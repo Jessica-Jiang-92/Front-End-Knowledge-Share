@@ -160,9 +160,22 @@ function receiveMessage(event) {
 ```
 #### (4) LocalStorage
 
-
-
-
+通过`window.postMessage`，读写其他窗口的 LocalStorage 也成为了可能。下面是一个例子，主窗口写入`iframe`子窗口的`localStorage`。
+```
+window.onmessage = function(e) {
+  if (e.origin !== 'http://children.com') {
+    return;
+  }
+  var payload = JSON.parse(e.data);
+  localStorage.setItem(payload.key, JSON.stringify(payload.data));
+};
+```
+上面代码中，子窗口将父窗口发来的消息，写入自己的`LocalStorage`。父窗口发送消息的代码如下
+```
+var win = document.getElementsByTagName('iframe')[0].contentWindow;
+var obj = { name: 'Jack' };
+win.postMessage(JSON.stringify({key: 'storage', data: obj}), 'http://children.com');
+```
 
 
 
