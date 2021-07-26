@@ -220,6 +220,6 @@ window.onmessage = function(e) {
   console.log(JSON.parse(e.data).name);
 };
 ```
-## 4. AJAX
+### 4.3 AJAX
 
 
