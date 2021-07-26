@@ -235,9 +235,31 @@ JSONP是服务器与客户端跨源通信的常用方法。
 它的基本思想是，网页通过添加一个`<script>`元素，向服务器请求JSON数据，这种做法不受同源政策限制；服务器收到请求后，将数据放在一个指定名字的回调函数里传回来。
 首先，网页动态插入`<script>`元素，由它向跨源网址发出请求。
 
+```
+function addScriptTag(src) {
+  var script = document.createElement('script');
+  script.setAttribute("type","text/javascript");
+  script.src = src;
+  document.body.appendChild(script);
+}
 
+window.onload = function () {
+  addScriptTag('http://example.com/ip?callback=foo');
+}
 
+function foo(data) {
+  console.log('Your public IP address is: ' + data.ip);
+};
+```
+上面代码通过动态添加`<script>`元素，向服务器`example.com`发出请求。注意，该请求的查询字符串有一个callback参数，用来指定回调函数的名字，这对于JSONP是必需的。
 
+服务器收到这个请求以后，会将数据放在回调函数的参数位置返回。
+
+```
+foo({
+  "ip": "8.8.8.8"
+});
+```
 
 
 
