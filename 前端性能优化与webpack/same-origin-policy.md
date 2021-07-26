@@ -24,7 +24,7 @@
 |URL|结果|原因|
 |-|-|-|
 |http://store.company.com/dir2/other.html|同源|只有路径不同|
-|-|-|-|
+|http://store.company.com/dir/inner/another.html|同源|只有路径不同|
 |-|-|-|
 |-|-|-|
 |-|-|-|
