@@ -18,11 +18,12 @@
 - `http://example.com/dir/other.html`：不同源（域名不同）
 - `http://v2.www.example.com/dir/other.html`：不同源（域名不同）
 - `http://www.example.com:81/dir/other.html`：不同源（端口不同）
-再比如：
+
+再比如与 URL `http://store.company.com/dir/page.html` 的源进行对比的示例：
 
 |URL|结果|原因|
 |-|-|-|
-|-|-|-|
+|http://store.company.com/dir2/other.html|同源|只有路径不同|
 
 ## 2. 同源策略的目的
 
