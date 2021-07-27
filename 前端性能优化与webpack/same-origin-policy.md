@@ -307,7 +307,7 @@ Content-Language
 Last-Event-ID
 Content-Type：只限于三个值application/x-www-form-urlencoded、multipart/form-data、text/plain
 ```
-
+这是为了兼容表单（form），因为历史上表单一直可以发出跨域请求。AJAX 的跨域设计就是，只要表单可以发，AJAX 就可以直接发。凡是不同时满足上面两个条件，就属于非简单请求。浏览器对这两种请求的处理，是不一样的。
 
 
 2. 非简单请求
