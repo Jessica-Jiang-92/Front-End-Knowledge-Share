@@ -284,6 +284,7 @@ Connection: Upgrade
 Sec-WebSocket-Accept: HSmrc0sMlYUkAGmm5OPpG2HaGWk=
 Sec-WebSocket-Protocol: chat
 ```
+#### (3) CORS
 
 
 
