@@ -286,14 +286,7 @@ Sec-WebSocket-Protocol: chat
 ```
 #### (3) CORS
 
-
-
-
-
-
-
-
-
+CORS是跨源资源分享（Cross-Origin Resource Sharing）的缩写。它是W3C标准，是跨源AJAX请求的根本解决方法。相比JSONP只能发GET请求，CORS允许任何类型的请求。
 
 
 
