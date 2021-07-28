@@ -28,6 +28,10 @@
 
 - 插件介绍：[webpack-bundle-analyzer插件快速入门](https://juejin.cn/post/6844903825216651271)
 - 项目中使用：`const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;`
+- 基本作用：
+
+  首先，这是一个webpack的插件，需要配合webpack和webpack-cli一起使用。这个插件的功能是生成代码分析报告，帮助提升代码质量和网站性能。
+
 
 
 
