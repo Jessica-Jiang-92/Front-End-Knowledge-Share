@@ -34,6 +34,153 @@
 
 ## 4. fork-ts-checker-webpack-plugin
 
+## 5. 一个完整的Webpack文件如何编写
+```
+const path = require('path');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+
+const isQuickMode = process.env.QUICK_MODE === 'true';
+const isAnalysis = process.env.ANALYZE_BUNDLE === 'true';
+const NODE_ENV = process.env.NODE_ENV || 'development';
+const isProd = NODE_ENV === 'production';
+
+function resolve(dir) {
+  return path.join(__dirname, '..', dir);
+}
+
+const cssLoader = [
+  {
+    loader: 'css-loader',
+    options: { minimize: isProd },
+  },
+  'postcss-loader',
+  'less-loader',
+];
+
+const webpackCommonPlugins = [
+  new VueLoaderPlugin(),
+  new MiniCssExtractPlugin({
+    filename: 'common.[chunkhash].css',
+  }),
+  ...(isProd ? [] : [new FriendlyErrorsPlugin()]),
+];
+
+if (isQuickMode) {
+  webpackCommonPlugins.unshift(
+    new ForkTsCheckerWebpackPlugin({
+      memoryLimit: 1024 * 4,
+      workers: ForkTsCheckerWebpackPlugin.ONE_CPU_FREE,
+      ignoreDiagnostics: [2307],
+    }),
+  );
+}
+
+if (isAnalysis) {
+  webpackCommonPlugins.push(
+    new BundleAnalyzerPlugin({
+      async: false,
+    }),
+  );
+}
+
+module.exports = {
+  mode: NODE_ENV,
+  devtool: isProd ? false : '#cheap-module-source-map',
+  output: {
+    path: resolve('dist'),
+    publicPath: '/dist/',
+    filename: '[name].[chunkhash].js',
+  },
+  externals: {
+    jquery: 'jQuery',
+  },
+  resolve: {
+    extensions: ['.webpack.js', '.web.js', '.ts', '.js', '.json', '.vue'],
+    alias: {
+      public: resolve('public'),
+      jquery: resolve('public/js/jquery.min.js'),
+      vue$: 'vue/dist/vue.esm.js',
+      '@': resolve('src'),
+    },
+  },
+  module: {
+    noParse: /es6-promise\.js$/, // avoid webpack shimming process
+    rules: [
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: {
+          compilerOptions: {
+            preserveWhitespace: false,
+          },
+        },
+      },
+      {
+        enforce: 'pre',
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        include: [resolve('src'), resolve('node_modules/vue-echarts'), resolve('node_modules/libphonenumber-js')],
+      },
+      {
+        test: /\.ts$/,
+        loader: 'ts-loader',
+        exclude: /node_modules/,
+        options: {
+          appendTsSuffixTo: [/\.vue$/],
+          happyPackMode: isQuickMode,
+        },
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: '[name].[ext]?[hash]',
+        },
+      },
+      {
+        test: /\.(woff2?|eot|ttf|otf|svg)(\?.*)?$/,
+        loader: 'file-loader',
+        options: {
+          limit: 10000,
+          name: '[name].[hash:7].[ext]',
+          esModule: false,
+        },
+      },
+      {
+        test: /\.(le|c)ss$/,
+        oneOf: [
+          {
+            test: /App/,
+            resourceQuery: /\?vue/,
+            use: [MiniCssExtractPlugin.loader, ...cssLoader],
+          },
+          {
+            use: ['vue-style-loader', ...cssLoader],
+          },
+        ],
+      },
+    ],
+  },
+  performance: {
+    maxEntrypointSize: 300000,
+    hints: isProd ? 'warning' : false,
+  },
+  plugins: webpackCommonPlugins,
+};
+
+```
+
+
 
 
 
