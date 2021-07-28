@@ -22,3 +22,5 @@
 - 介绍：[Friendly-errors-webpack-plugin 介绍](https://www.cnblogs.com/angelasp/p/10622283.html)
 - 插件作用：Friendly-errors-webpack-plugin识别某些类别的webpack错误，并清理，聚合和优先级，以提供更好的开发人员体验。
 
+如：我们运行nodejs时，能够看到控制台上面打印出来的红色标识的`Error`信息，就是该插件友好性的一个体现
+
