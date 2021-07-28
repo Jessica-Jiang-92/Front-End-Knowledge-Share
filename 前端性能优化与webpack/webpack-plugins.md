@@ -1,6 +1,6 @@
-## 项目中常用的Webpack Plugins
+# 项目中常用的Webpack Plugins
 
-### 1. mini-css-extract-plugin
+## 1. mini-css-extract-plugin
 
 - 官方文档：[MiniCssExtractPlugin-Webpack](https://webpack.docschina.org/plugins/mini-css-extract-plugin/)
 - 插件作用
@@ -17,7 +17,7 @@
 
 - 建议 `mini-css-extract-plugin` 与 `css-loader` 一起使用。之后将 loader 与 plugin 添加到你的 webpack 配置文件中。
 
-### 2. friendly-errors-webpack-plugin
+## 2. friendly-errors-webpack-plugin
 
 - 介绍：[Friendly-errors-webpack-plugin 介绍](https://www.cnblogs.com/angelasp/p/10622283.html)
 
