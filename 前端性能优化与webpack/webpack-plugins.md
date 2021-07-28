@@ -39,10 +39,10 @@
 - npm官方解释：[https://www.npmjs.com/package/fork-ts-checker-webpack-plugin](https://www.npmjs.com/package/fork-ts-checker-webpack-plugin)
 - 作用
 
-  1. TypeScript类型检查和EsLint连接（通过将每个进程移动到单独的进程）
-  2. 支持最新的TypeScript功能，如项目参考和增量模式
-  3. 支持Vue Single File Component
-  4. 使用代码桢格式化器显示漂亮的错误信息
+1. TypeScript类型检查和EsLint连接（通过将每个进程移动到单独的进程）
+2. 支持最新的TypeScript功能，如项目参考和增量模式
+3. 支持Vue Single File Component
+4. 使用代码桢格式化器显示漂亮的错误信息
 
 ## 5. 一个完整的Webpack文件如何编写
 
