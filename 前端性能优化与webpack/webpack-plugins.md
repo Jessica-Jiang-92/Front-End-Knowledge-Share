@@ -27,7 +27,7 @@
 ## 3. webpack-bundle-analyzer
 
 - 插件介绍：[webpack-bundle-analyzer插件快速入门](https://juejin.cn/post/6844903825216651271)
-
+- 项目中使用：`const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;`
 
 
 
