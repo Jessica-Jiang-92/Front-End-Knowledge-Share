@@ -17,3 +17,7 @@
 
 - 建议 `mini-css-extract-plugin` 与 `css-loader` 一起使用。之后将 loader 与 plugin 添加到你的 webpack 配置文件中。
 
+### 2. friendly-errors-webpack-plugin
+
+
+
