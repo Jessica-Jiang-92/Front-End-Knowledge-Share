@@ -19,5 +19,6 @@
 
 ### 2. friendly-errors-webpack-plugin
 
+- 介绍：[Friendly-errors-webpack-plugin 介绍](https://www.cnblogs.com/angelasp/p/10622283.html)
 
 
