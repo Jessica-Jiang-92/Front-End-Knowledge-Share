@@ -34,6 +34,7 @@
 
 ## 4. fork-ts-checker-webpack-plugin
 
+从名字可以看出来，该插件主要用作处理ts相关的内容。
 - 
 
 ## 5. 一个完整的Webpack文件如何编写
