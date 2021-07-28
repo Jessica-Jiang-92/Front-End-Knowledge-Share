@@ -20,5 +20,5 @@
 ## 2. friendly-errors-webpack-plugin
 
 - 介绍：[Friendly-errors-webpack-plugin 介绍](https://www.cnblogs.com/angelasp/p/10622283.html)
-
+- 插件作用：Friendly-errors-webpack-plugin识别某些类别的webpack错误，并清理，聚合和优先级，以提供更好的开发人员体验。
 
