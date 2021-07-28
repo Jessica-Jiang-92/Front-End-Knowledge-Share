@@ -24,3 +24,10 @@
 
 如：我们运行nodejs时，能够看到控制台上面打印出来的红色标识的`Error`信息，就是该插件友好性的一个体现
 
+## 3. webpack-bundle-analyzer
+
+- 插件介绍：[webpack-bundle-analyzer插件快速入门](https://juejin.cn/post/6844903825216651271)
+
+
+
+
