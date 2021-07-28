@@ -15,3 +15,5 @@
 3. 更容易使用
 4. 特别针对CSS开发
 
+- 建议 `mini-css-extract-plugin` 与 `css-loader` 一起使用。之后将 loader 与 plugin 添加到你的 webpack 配置文件中。
+
