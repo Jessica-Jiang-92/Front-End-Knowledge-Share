@@ -40,7 +40,22 @@ loader: 'babel-loader?cacheDirectory=true'
 ### 1-2 cache-loader缓存loader处理结果
 
 在一些性能开销较大的 `loader` 之前添加 `cache-loader`，以将处理结果缓存到磁盘里，这样下次打包可以直接使用缓存结果而不需要重新打包。
-
+```
+module.exports = {
+  module: {
+    rules: [
+      {
+        // js 文件才使用 babel
+        test: /\.js$/,
+        use: [
+          'cache-loader',
+          ...loaders
+        ],
+      }
+    ]
+  }
+}
+```
 
 
 
