@@ -18,5 +18,14 @@ Vue中非常常见的有父子组件通信，兄弟组件通信。而父子组�
 import Vue from 'vue'
 export const EventBus = new Vue()
 ```
+实质上`EventBus`是一个不具备 `DOM` 的组件，它具有的仅仅只是它实例方法而已，因此它非常的轻便。
+
+另外一种方式，可以直接在项目中的 `main.js` 初始化 `EventBus` :
+```
+// main.js
+Vue.prototype.$EventBus = new Vue()
+```
+注意，这种方式初始化的EventBus是一个全局的事件总线。稍后再来聊一聊全局的事件总线。现在我们已经创建了 `EventBus` ，接下来你需要做到的就是在你的组件中加载它，并且调用同一个方法，就如你在父子组件中互相传递消息一样。
+
 
 
