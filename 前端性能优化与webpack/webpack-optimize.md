@@ -58,8 +58,11 @@ module.exports = {
 ```
 那这么说的话，我给每个`loder`前面都加上`cache-loader`，然而凡事物极必反，保存和读取这些缓存文件会有一些时间开销，所以请只对性能开销较大的 `loader` 使用 `cache-loader`。关于这个`cache-loader`更详细的使用方法请参照这里[cache-loader使用注意](https://www.webpackjs.com/loaders/cache-loader/)。
 
+### 1-3 使用多线程处理打包
 
+受限于`Node`是单线程运行的，所以 `Webpack` 在打包的过程中也是单线程的，特别是在执行 `Loader` 的时候，长时间编译的任务很多，这样就会导致等待的情况。那么我们可以使用一些方法将 `Loader` 的同步执行转换为并行，这样就能充分利用系统资源来提高打包速度了。
 
+#### (1) HappyPack
 
 
 
