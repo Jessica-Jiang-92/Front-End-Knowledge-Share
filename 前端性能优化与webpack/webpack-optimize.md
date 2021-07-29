@@ -9,6 +9,9 @@ webpack 是一个模块打包器。它的主要目标是将 JavaScript 文件打
 
 ## 1. 提高webpack打包速度
 
+### 1-1 优化loader的搜索范围
+
+
 
 
 
