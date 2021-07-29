@@ -65,7 +65,35 @@ module.exports = {
 #### (1) HappyPack
 
 [HappyPack](https://github.com/amireh/happypack)，快乐的打包。人如其名，就是能够让`Webpack`把打包任务分解给多个子线程去并发的执行，子线程处理完后再把结果发送给主线程。
-
+```
+module: {
+  rules: [
+    {
+        test: /\.js$/,
+        // 把对 .js 文件的处理转交给 id 为 babel 的 HappyPack 实例
+        use: ['happypack/loader?id=babel'],
+        exclude: path.resolve(__dirname, 'node_modules'),
+    },
+    {
+        test: /\.css$/,
+        // 把对 .css 文件的处理转交给 id 为 css 的 HappyPack 实例
+        use: ['happypack/loader?id=css']
+    }
+  ]
+},
+plugins: [
+  	new HappyPack({
+        id: 'js', //ID是标识符的意思，ID用来代理当前的happypack是用来处理一类特定的文件的
+        threads: 4, //你要开启多少个子进程去处理这一类型的文件
+        loaders: [ 'babel-loader' ]
+    }),
+    new HappyPack({
+        id: 'css',
+        threads: 2,
+        loaders: [ 'style-loader', 'css-loader' ]
+    })
+]
+```
 
 
 
