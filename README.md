@@ -53,6 +53,7 @@
 - [5. 讲一讲防抖与节流](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B8%8Ewebpack/shaking-and-throttle.md)
 - [6. 如何最大程度的优化webpack打包速度？]()
 - [7. hash，contenthash，chunkhash的区别]()
+- [8. 你了解事件总线EventBus吗？请谈一谈]()
 
 
 ## 🏗️ 5. 算法
