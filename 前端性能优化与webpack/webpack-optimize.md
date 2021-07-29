@@ -34,7 +34,9 @@ module.exports = {
 对于 `Babel` 来说，我们肯定是希望只作用在 `JS` 代码上的，然后 `node_modules` 中使用的代码都是编译过的，所以我们也完全没有必要再去处理一遍。
 
 另外，对于`babel-loader`，我们还可以将 `Babel` 编译过的文件缓存起来，下次只需要编译更改过的代码文件即可，这样可以大幅度加快打包时间。
-
+```
+loader: 'babel-loader?cacheDirectory=true'
+```
 
 
 
