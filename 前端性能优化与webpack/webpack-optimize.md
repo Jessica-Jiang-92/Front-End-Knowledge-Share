@@ -37,6 +37,6 @@ module.exports = {
 ```
 loader: 'babel-loader?cacheDirectory=true'
 ```
-
+### 1-2 cache-loader缓存loader处理结果
 
 
