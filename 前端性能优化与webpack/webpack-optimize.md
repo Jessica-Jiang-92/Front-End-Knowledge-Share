@@ -14,7 +14,23 @@ webpack 是一个模块打包器。它的主要目标是将 JavaScript 文件打
 对于Loader来说，影响打包效率首当其冲必属 `Babel` 了。因为 `Babel` 会将代码转为字符串生成 `AST`，然后对 `AST` 继续进行转变最后再生成新的代码，项目越大，转换代码越多，效率就越低。当然了，我们是有办法优化的。
 
 首先我们可以优化 Loader 的文件搜索范围，在使用loader时,我们可以指定哪些文件不通过loader处理,或者指定哪些文件通过loader处理。
-
+```
+module.exports = {
+  module: {
+    rules: [
+      {
+        // js 文件才使用 babel
+        test: /\.js$/,
+        use: ['babel-loader'],
+        // 只处理src文件夹下面的文件
+        include: path.resolve('src'),
+        // 不处理node_modules下面的文件
+        exclude: /node_modules/
+      }
+    ]
+  }
+}
+```
 
 
 
