@@ -64,5 +64,11 @@ module.exports = {
 
 #### (1) HappyPack
 
+[HappyPack](https://github.com/amireh/happypack)，快乐的打包。人如其名，就是能够让`Webpack`把打包任务分解给多个子线程去并发的执行，子线程处理完后再把结果发送给主线程。
+
+
+
+
+
 
 
