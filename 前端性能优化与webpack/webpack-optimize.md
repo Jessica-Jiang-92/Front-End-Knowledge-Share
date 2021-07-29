@@ -56,7 +56,7 @@ module.exports = {
   }
 }
 ```
-那这么说的话，我给每个`loder`前面都加上`cache-loader`，然而凡事物极必反，保存和读取这些缓存文件会有一些时间开销，所以请只对性能开销较大的 `loader` 使用 `cache-loader`。关于这个`cache-loader`更详细的使用方法请参照这里[cache-loader使用注意]()。
+那这么说的话，我给每个`loder`前面都加上`cache-loader`，然而凡事物极必反，保存和读取这些缓存文件会有一些时间开销，所以请只对性能开销较大的 `loader` 使用 `cache-loader`。关于这个`cache-loader`更详细的使用方法请参照这里[cache-loader使用注意](https://www.webpackjs.com/loaders/cache-loader/)。
 
 
 
