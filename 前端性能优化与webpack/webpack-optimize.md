@@ -94,9 +94,9 @@ plugins: [
     })
 ]
 ```
+#### (2) thread-loader
 
-
-
+[thread-loader](https://www.webpackjs.com/loaders/thread-loader/) ，在`worker` 池`(worker pool)`中运行加载器`loader`。把`thread-loader` 放置在其他 `loader` 之前， 放置在这个 `thread-loader` 之后的 `loader` 就会在一个单独的 `worker` 池(worker pool)中运行。
 
 
 
