@@ -29,6 +29,7 @@ Vue.prototype.$EventBus = new Vue()
 
 ### 1-2 发送事件
 
+假设你有2个Vue页面需要通信：A和B，A在按钮上绑定了点击事件，发送一则消息，想通知B页面。
 
 
 
