@@ -81,7 +81,7 @@ export default {
 EventBus.$emit(channel: string, callback(payload1,…))
 
 // 监听接收消息
-
+EventBus.$on(channel: string, callback(payload1,…))
 ```
 
 
