@@ -96,6 +96,7 @@ EventBus.$off('aMsg', {})
 
 上面就是 `EventBus` 的使用方法，是不是很简单。上面的示例中我们也看到了，每次使用 `EventBus` 时都需要在各组件中引入 `event-bus.js` 。事实上，我们还可以通过别的方式，让事情变得简单一些。那就是创建一个全局的 `EventBus` 。接下来的示例向大家演示如何在Vue项目中创建一个全局的 `EventBus` 。
 
+## 全局EventBus
 
 
 
