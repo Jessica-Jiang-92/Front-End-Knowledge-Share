@@ -49,4 +49,42 @@ export default {
 ```
 接下来，我们需要在B页面中接收这则消息。
 
+### 1-3 接收事件
+```
+<!-- IncrementCount.vue -->
+<template>
+  <p>{{msg}}</p>
+</template>
+
+<script> 
+import { 
+  EventBus 
+} from "../event-bus.js";
+export default {
+  data(){
+    return {
+      msg: ''
+    }
+  },
+  mounted() {
+    EventBus.$on("aMsg", (msg) => {
+      // A发送来的消息
+      this.msg = msg;
+    });
+  }
+};
+</script>
+```
+同理，我们也可以在B页面向A页面发送消息。这里主要用到两个方法：
+```
+// 发送消息
+EventBus.$emit(channel: string, callback(payload1,…))
+
+// 监听接收消息
+
+```
+
+
+
+
 
