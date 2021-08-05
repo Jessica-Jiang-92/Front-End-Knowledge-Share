@@ -83,7 +83,7 @@ EventBus.$emit(channel: string, callback(payload1,…))
 // 监听接收消息
 EventBus.$on(channel: string, callback(payload1,…))
 ```
-
+前面提到过，如果使用不善，`EventBus`会是一种灾难，到底是什么样的“灾难”了？大家都知道vue是单页应用，如果你在某一个页面刷新了之后，与之相关的`EventBus`会被移除，这样就导致业务走不下去。还要就是如果业务有反复操作的页面，`EventBus`在监听的时候就会触发很多次，也是一个非常大的隐患。这时候我们就需要好好处理`EventBus`在项目中的关系。通常会用到，在vue页面销毁时，同时移除`EventBus`事件监听。
 
 
 
