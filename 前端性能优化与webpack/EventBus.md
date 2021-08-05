@@ -92,6 +92,17 @@ import {
 } from './event-bus.js'
 EventBus.$off('aMsg', {})
 ```
+你也可以使用 `EventBus.$off('aMsg')` 来移除应用内所有对此某个事件的监听。或者直接调用 `EventBus.$off()` 来移除所有事件频道，不需要添加任何参数 。
+
+
+
+
+
+
+
+
+
+
 
 
 
