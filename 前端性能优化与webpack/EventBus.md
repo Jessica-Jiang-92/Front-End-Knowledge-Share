@@ -147,6 +147,8 @@ this.$bus.$on('updateMessage', function(value) {
 
 #### 缺点
 
+- 滥用它，EventBus可以大量解耦项目，但是如果你大量的使用它会产生一个非常危险的后果，你需要定义大量的常量或者新的实体类来区分接收者。管理EventBus的消息类别将会你的痛苦
+
 `EventBus`的使用不当容易造成服务器端的内存泄漏问题。那么什么情况下会造成这种情况呢？当你在`created()`中使用`EventBus`时就会出现这种现象，如：
 ```
  created() {
