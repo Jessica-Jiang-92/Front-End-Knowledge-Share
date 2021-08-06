@@ -138,7 +138,14 @@ this.$bus.$on('updateMessage', function(value) {
 
 ### 注意
 
-`EventBus`的使用不当容易造成服务器端的内存泄漏问题。那么什么情况下会造成这种情况呢？
+`EventBus`的使用不当容易造成服务器端的内存泄漏问题。那么什么情况下会造成这种情况呢？当你在`created()`中使用`EventBus`时就会出现这种现象，如：
+```
+ created() {
+    EventBus.$on('playTrendVideo', url => {
+      this.openVideo(url);
+    });
+  }
+```
 
 
 
