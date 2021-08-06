@@ -146,7 +146,7 @@ this.$bus.$on('updateMessage', function(value) {
     });
   }
 ```
-
+这个时候怎么处理呢？可以选择不适用`created()`，或者使用`mounted()`来替换。
 
 
 
