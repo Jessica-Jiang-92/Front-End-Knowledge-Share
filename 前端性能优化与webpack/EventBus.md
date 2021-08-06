@@ -138,7 +138,7 @@ this.$bus.$on('updateMessage', function(value) {
 
 ### 注意
 
-
+`EventBus`的使用不当容易造成服务器端的内存泄漏问题。
 
 
 
