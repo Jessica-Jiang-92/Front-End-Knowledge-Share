@@ -138,6 +138,12 @@ this.$bus.$on('updateMessage', function(value) {
 
 ### 优缺点
 
+#### 优点
+
+- 简单统一
+
+#### 缺点
+
 `EventBus`的使用不当容易造成服务器端的内存泄漏问题。那么什么情况下会造成这种情况呢？当你在`created()`中使用`EventBus`时就会出现这种现象，如：
 ```
  created() {
