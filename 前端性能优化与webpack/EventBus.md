@@ -142,6 +142,7 @@ this.$bus.$on('updateMessage', function(value) {
 
 - 简单统一的数据传递
 - 清晰明了的主次线程
+- 使用class来传递数据（是的，最好用的地方用一个class来传递数据，这下传一个class，就可以携带各种各样的数据了，摆脱了用Bundle传递list和数组）
 
 #### 缺点
 
