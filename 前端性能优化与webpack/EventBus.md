@@ -113,7 +113,7 @@ Object.defineProperties(Vue.prototype, {
   }
 })
 ```
-
+在这个特定的总线中使用两个方法`$on`和`$emit`。一个用于创建发出的事件，它就是`$emit`；另一个用于订阅`$on`：
 
 
 
