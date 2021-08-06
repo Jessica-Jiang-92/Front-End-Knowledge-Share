@@ -124,6 +124,21 @@ this.$bus.$on('nameOfEvent',($event) => {
   // ...
 })
 ```
-然后我们可以在某个Vue页面使用this.$bus.$emit("sendMsg", '我是web秀');，另一个Vue页面使用:
+然后我们可以在某个Vue页面使用this.$bus.$emit("sendMsg", '我是一条message');，另一个Vue页面使用:
+```
+this.$bus.$on('updateMessage', function(value) {
+  console.log(value); // 我是web秀
+})
+```
+
+
+
+
+
+
+
+
+
+
 
 
