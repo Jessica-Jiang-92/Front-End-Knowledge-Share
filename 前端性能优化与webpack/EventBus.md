@@ -140,7 +140,8 @@ this.$bus.$on('updateMessage', function(value) {
 
 #### 优点
 
-- 简单统一
+- 简单统一的数据传递
+- 清晰明了的主次线程
 
 #### 缺点
 
