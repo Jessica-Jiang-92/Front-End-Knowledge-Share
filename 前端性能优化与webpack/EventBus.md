@@ -132,6 +132,7 @@ this.$bus.$on('updateMessage', function(value) {
 ```
 同时也可以使用`this.$bus.$off('sendMsg')`来移除事件监听。
 
+### 总结
 
 
 
