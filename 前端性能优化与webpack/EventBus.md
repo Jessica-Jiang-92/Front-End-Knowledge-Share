@@ -136,7 +136,7 @@ this.$bus.$on('updateMessage', function(value) {
 
 本文主要通过简单的实例学习了Vue中有关于`EventBus`相关的知识点。主要涉及了 `EventBus` 如何实例化，又是如何通过 `$emit` 发送频道信号，又是如何通过 `$on` 来接收频道信号。最后简单介绍了如何创建全局的 `EventBus` 。从实例中我们可以了解到，`EventBus` 可以较好的实现兄弟组件之间的数据通讯。
 
-
+### 注意
 
 
 
