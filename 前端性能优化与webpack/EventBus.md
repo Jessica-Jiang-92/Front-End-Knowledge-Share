@@ -134,7 +134,7 @@ this.$bus.$on('updateMessage', function(value) {
 
 ### 总结
 
-
+本文主要通过简单的实例学习了Vue中有关于`EventBus`相关的知识点。
 
 
 
