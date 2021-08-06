@@ -130,7 +130,7 @@ this.$bus.$on('updateMessage', function(value) {
   console.log(value); // 我是web秀
 })
 ```
-
+同时也可以使用`this.$bus.$off('sendMsg')`来移除事件监听。
 
 
 
