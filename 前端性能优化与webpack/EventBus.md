@@ -143,6 +143,7 @@ this.$bus.$on('updateMessage', function(value) {
 - 简单统一的数据传递
 - 清晰明了的主次线程
 - 使用class来传递数据（是的，最好用的地方用一个class来传递数据，这下传一个class，就可以携带各种各样的数据了，摆脱了用Bundle传递list和数组）
+- 在`activity`与`activity`，或者`Service`与`activity`传递大数据时的唯一选择。因为序列化大数据进行传递时，是十分耗时缓慢的。用`EventBus`是最优解法。
 
 #### 缺点
 
