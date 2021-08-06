@@ -98,6 +98,7 @@ EventBus.$off('aMsg', {})
 
 ## 2. 全局EventBus
 
+它的工作原理是发布/订阅方法，通常称为 Pub/Sub 。
 
 
 
