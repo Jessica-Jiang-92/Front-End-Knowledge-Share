@@ -115,8 +115,15 @@ Object.defineProperties(Vue.prototype, {
 ```
 在这个特定的总线中使用两个方法`$on`和`$emit`。一个用于创建发出的事件，它就是`$emit`；另一个用于订阅`$on`：
 
+```
+var EventBus = new Vue();
 
+this.$bus.$emit('nameOfEvent', { ... pass some event data ...});
 
-
+this.$bus.$on('nameOfEvent',($event) => {
+  // ...
+})
+```
+然后我们可以在某个Vue页面使用this.$bus.$emit("sendMsg", '我是web秀');，另一个Vue页面使用:
 
 
