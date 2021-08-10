@@ -23,8 +23,8 @@
 {
   tag: 'ul',
   children: [
-    { tag: 'li', children: [ { vnode: { text: '1' } } ] },
-    { tag: 'li', children: [ { vnode: { text: '2' } } ] },
+    { tag: 'li', children: [ { vnode: { text: '1' } } ] }, // 1
+    { tag: 'li', children: [ { vnode: { text: '2' } } ] }, // 2
 ],
 }
 ```
@@ -34,9 +34,9 @@
 {
   tag: 'ul',
   children: [
-    { tag: 'li', children: [ { vnode: { text: '1' } } ] },
-    { tag: 'li', children: [ { vnode: { text: '2' } } ] },
-],
+    { tag: 'li', children: [ { vnode: { text: '2' } } ] }, // 2
+    { tag: 'li', children: [ { vnode: { text: '1' } } ] }, // 1
+  ],
 }
 ```
 
