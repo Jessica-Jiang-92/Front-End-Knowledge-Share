@@ -49,7 +49,7 @@ export default {
 ```
 接下来，我们需要在B页面中接收这则消息。
 
-### 1-3 接收事件
+### 1.3 接收事件
 ```
 <!-- IncrementCount.vue -->
 <template>
