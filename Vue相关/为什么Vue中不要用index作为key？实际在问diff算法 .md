@@ -28,8 +28,17 @@
 ],
 }
 ```
+假设更新后，我们把子节点的顺序调换一下：
 
-
+```
+{
+  tag: 'ul',
+  children: [
+    { tag: 'li', children: [ { vnode: { text: '1' } } ] },
+    { tag: 'li', children: [ { vnode: { text: '2' } } ] },
+],
+}
+```
 
 
 
