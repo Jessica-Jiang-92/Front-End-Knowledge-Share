@@ -84,4 +84,24 @@
 ```
 这些变量分别指向旧节点的首尾、新节点的首尾。
 根据这些指针，在一个 `while` 循环中不停的对新旧节点的两端的进行对比，然后把两端的指针向不断内部收缩，直到没有节点可以对比。在讲对比过程之前，要讲一个比较重要的函数：`sameVnode`：
+```
+function sameVnode (a, b) {
+  return (
+    a.key === b.key && (
+      (
+        a.tag === b.tag &&
+        a.isComment === b.isComment &&
+        isDef(a.data) === isDef(b.data) &&
+        sameInputType(a, b)
+      )
+    )
+  )
+}
+```
+
+
+
+
+
+
 
