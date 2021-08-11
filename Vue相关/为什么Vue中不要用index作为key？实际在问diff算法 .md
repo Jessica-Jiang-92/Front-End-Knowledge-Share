@@ -71,7 +71,17 @@
 
   那么就是我们 diff算法 想要考察的最核心的点了，也就是新旧节点的 diff 过程。可以大致看下这个函数。
 
-
-
+通过
+```
+// 旧首节点
+  let oldStartIdx = 0
+  // 新首节点
+  let newStartIdx = 0
+  // 旧尾节点
+  let oldEndIdx = oldCh.length - 1
+  // 新尾节点
+  let newEndIdx = newCh.length - 1
+```
+这些变量分别指向旧节点的首尾、新节点的首尾。
 
 
