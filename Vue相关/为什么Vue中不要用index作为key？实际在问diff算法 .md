@@ -98,7 +98,7 @@ function sameVnode (a, b) {
   )
 }
 ```
-
+它是用来判断节点是否可用的关键函数，可以看到，判断是否是 `sameVnode`，传递给节点的 `key` 是关键。
 
 
 
