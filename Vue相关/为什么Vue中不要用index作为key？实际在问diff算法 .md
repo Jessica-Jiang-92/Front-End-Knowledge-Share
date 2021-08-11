@@ -59,5 +59,13 @@
   
   那么就要开始对子节点`children`进行对比了。（可以类比 ul 中的 li 子元素）。
 
+- 如果有新 children 而没有旧 children
+
+  说明是新增`children`，直接 `addVnodes` 添加新子节点。
+
+
+
+
+
 
 
