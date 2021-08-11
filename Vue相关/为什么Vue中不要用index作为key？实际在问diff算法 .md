@@ -51,9 +51,9 @@
 
 这种情况下，节点相同，那就要尽可能的做节点的复用，会调用`src/core/vdom/patch.js`下的`patchVNode`方法。
 
+- 如果新 vnode 是文字 vnode
 
-
-
+就直接调用浏览器的`dom api`把节点的直接替换掉文字内容就好。
 
 
 
