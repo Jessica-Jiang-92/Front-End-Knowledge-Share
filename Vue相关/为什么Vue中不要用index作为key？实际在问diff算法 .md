@@ -45,7 +45,7 @@
 
 ### （1）不是相同节点
 
-`isSameNode`为false的话，直接销毁旧的`vnode`，渲染新的`vnode`。
+`isSameNode`为false的话，直接销毁旧的`vnode`，渲染新的`vnode`。这也就是为什么`diff`算法是同层对比的原因。
 
 ### （2）是相同节点
 
