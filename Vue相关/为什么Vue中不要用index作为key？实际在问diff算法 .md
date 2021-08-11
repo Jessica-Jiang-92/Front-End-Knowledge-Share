@@ -62,6 +62,10 @@
 - 如果有新 children 而没有旧 children
 
   说明是新增`children`，直接 `addVnodes` 添加新子节点。
+  
+- 如果有旧 children 而没有新 children
+
+  说明是删除 `children`，直接 `removeVnodes` 删除旧子节点
 
 
 
