@@ -113,3 +113,6 @@ function sameVnode (a, b) {
 1. 有新节点需要加入。 如果更新完以后，`oldStartIdx > oldEndIdx`，说明旧节点都被 `patch` 完了，但是有可能还有新的节点没有被处理到。接着会去判断是否要新增子节点。
 2. 有旧节点需要删除。 如果新节点先`patch`完了，那么此时会走 `newStartIdx > newEndIdx` 的逻辑，那么就会去删除多余的旧子节点。
 
+
+
+
