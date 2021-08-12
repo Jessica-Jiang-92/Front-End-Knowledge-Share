@@ -100,7 +100,7 @@ function sameVnode (a, b) {
 ```
 它是用来判断节点是否可用的关键函数，可以看到，判断是否是 `sameVnode`，传递给节点的 `key` 是关键。
 
-然后我们接着进入`diff`过程，
+然后我们接着进入`diff`过程，每一轮都是同样的对比，其中某一项命中了，就递归的进入 `patchVnode` 针对单个 `vnode` 进行的过程（如果这个 `vnode` 又有 `children`，那么还会来到这个 `diff children` 的过程 ）：
 
 
 
