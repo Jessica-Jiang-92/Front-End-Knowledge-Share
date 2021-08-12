@@ -106,7 +106,7 @@ function sameVnode (a, b) {
 - 旧尾节点和新尾节点用 `sameNode` 对比
 - 旧首节点和新尾节点用 `sameNode` 对比
 - 旧尾节点和新首节点用 `sameNode` 对比
-- 
+- 如果以上逻辑都匹配不到，再把所有旧子节点的 `key` 做一个映射到旧节点下标的 key -> index 表，然后用新 vnode 的 key 去找出在旧节点中可以复用的位置。
 
 
 
