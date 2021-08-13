@@ -157,6 +157,6 @@ function sameVnode (a, b) {
       });
     </script>
 ```
-
+组件很简单，是一个列表，渲染`1 2 3`三个数字。我们如果以index作为key，那么会有怎样的表现呢？
 
 
