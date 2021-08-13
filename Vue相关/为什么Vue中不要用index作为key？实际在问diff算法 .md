@@ -128,7 +128,7 @@ function sameVnode (a, b) {
           :class="`item${num}`"
         ></item>
       </ul>
-      <button @click="change">改变</button>
+      <button @click="change">Change</button>
     </div>
     <script src="./vue.js"></script>
     <script>
