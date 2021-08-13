@@ -115,6 +115,7 @@ function sameVnode (a, b) {
 
 ## 为什么不要用index作为key
 
+### 1. 节点reverse场景
 
 
 
