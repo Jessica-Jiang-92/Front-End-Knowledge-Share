@@ -185,7 +185,10 @@ function sameVnode (a, b) {
   }
 ];
 ```
+点击了`Change`按钮之后，会对数组做`reverse`操作。此时生成的`newChildren`列表如下：
+```
 
+```
 
 
 
