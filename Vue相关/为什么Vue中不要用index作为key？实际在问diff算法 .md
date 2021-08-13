@@ -187,9 +187,31 @@ function sameVnode (a, b) {
 ```
 点击了`Change`按钮之后，会对数组做`reverse`操作。此时生成的`newChildren`列表如下：
 ```
-
+[
+  {
+    tag: "item",
+    key: 0,
+    props: {
++     num: 3
+    }
+  },
+  {
+    tag: "item",
+    key: 1,
+    props: {
++     num: 2
+    }
+  },
+  {
+    tag: "item",
+    key: 2,
+    props: {
++     num: 1
+    }
+  }
+];
 ```
-
+我们会发现：key的顺序没变，传入的值完全变了。这会导致一个什么问题？
 
 
 
