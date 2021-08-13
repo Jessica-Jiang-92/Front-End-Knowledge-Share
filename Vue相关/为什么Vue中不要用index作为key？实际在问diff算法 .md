@@ -117,7 +117,46 @@ function sameVnode (a, b) {
 
 ### 1. 节点reverse场景
 
-
+假设我们有这样一段代码：
+```
+<div id="app">
+      <ul>
+        <item
+          :key="index"
+          v-for="(num, index) in nums"
+          :num="num"
+          :class="`item${num}`"
+        ></item>
+      </ul>
+      <button @click="change">改变</button>
+    </div>
+    <script src="./vue.js"></script>
+    <script>
+      var vm = new Vue({
+        name: "parent",
+        el: "#app",
+        data: {
+          nums: [1, 2, 3]
+        },
+        methods: {
+          change() {
+            this.nums.reverse();
+          }
+        },
+        components: {
+          item: {
+            props: ["num"],
+            template: `
+                    <div>
+                       {{num}}
+                    </div>
+                `,
+            name: "child"
+          }
+        }
+      });
+    </script>
+```
 
 
 
