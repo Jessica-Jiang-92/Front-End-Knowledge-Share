@@ -159,4 +159,34 @@ function sameVnode (a, b) {
 ```
 组件很简单，是一个列表，渲染`1 2 3`三个数字。我们如果以index作为key，那么会有怎样的表现呢？
 
+在首次渲染时，我们的虚拟节点列表`oldChildren`表示如下：
+```
+[
+  {
+    tag: "item",
+    key: 0,
+    props: {
+      num: 1
+    }
+  },
+  {
+    tag: "item",
+    key: 1,
+    props: {
+      num: 2
+    }
+  },
+  {
+    tag: "item",
+    key: 2,
+    props: {
+      num: 3
+    }
+  }
+];
+```
+
+
+
+
 
