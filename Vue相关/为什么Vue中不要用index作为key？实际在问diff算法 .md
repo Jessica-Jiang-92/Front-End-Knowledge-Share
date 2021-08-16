@@ -221,4 +221,8 @@ function sameVnode (a, b) {
 
 - updateAttrs
 - updateClass
+- updateDOMListeners
+
+
+
 
