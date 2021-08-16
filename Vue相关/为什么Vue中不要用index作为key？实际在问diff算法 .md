@@ -220,4 +220,5 @@ function sameVnode (a, b) {
 首先，在进行 patchVnode 的时候，会去检查 props 有没有变更，如果有的话，会通过 `_props.num = 3` 这样的逻辑去更新这个响应式的值，触发 `dep.notify`，触发子组件视图的重新渲染等一套很重的逻辑。然后，还会额外的触发以下几个钩子，假设我们的组件上定义了一些dom的属性或者类名、样式、指令，那么都会被全量的更新。
 
 - updateAttrs
+- updateClass
 
