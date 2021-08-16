@@ -224,6 +224,7 @@ function sameVnode (a, b) {
 - updateDOMListeners
 - updateDOMProps
 - updateStyle
+- updateDirectives
 
 
 
