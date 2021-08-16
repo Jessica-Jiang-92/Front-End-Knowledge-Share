@@ -223,6 +223,7 @@ function sameVnode (a, b) {
 - updateClass
 - updateDOMListeners
 - updateDOMProps
+- updateStyle
 
 
 
