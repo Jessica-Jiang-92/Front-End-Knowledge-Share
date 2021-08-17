@@ -232,9 +232,59 @@ function sameVnode (a, b) {
 
 另外，除了会导致性能损耗以外，在删除子节点的场景下还会造成更严重的错误，假设我们有下面的代码结构：
 ```
-
+<body>
+  <div id="app">
+    <ul>
+      <li v-for="(value, index) in arr" :key="index">
+        <test />
+      </li>
+    </ul>
+    <button @click="handleDelete">delete</button>
+  </div>
+  </div>
+</body>
+<script>
+  new Vue({
+    name: "App",
+    el: '#app',
+    data() {
+      return {
+        arr: [1, 2, 3]
+      };
+    },
+    methods: {
+      handleDelete() {
+        this.arr.splice(0, 1);
+      }
+    },
+    components: {
+      test: {
+        template: "<li>{{Math.random()}}</li>"
+      }
+    }
+  })
+</script>
 ```
-
+那么一开始`vnode列表`是：
+```
+[
+  {
+    tag: "li",
+    key: 0,
+    // 这里其实子组件对应的是第一个 假设子组件的text是1
+  },
+  {
+    tag: "li",
+    key: 1,
+    // 这里其实子组件对应的是第二个 假设子组件的text是2
+  },
+  {
+    tag: "li",
+    key: 2,
+    // 这里其实子组件对应的是第三个 假设子组件的text是3
+  }
+];
+```
 
 
 
