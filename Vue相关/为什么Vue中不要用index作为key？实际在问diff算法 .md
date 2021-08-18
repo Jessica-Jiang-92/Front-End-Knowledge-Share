@@ -320,7 +320,33 @@ function sameVnode (a, b) {
 ```
 其实我听过一种说法，既然官方要求一个 唯一的`key`，是不是可以用 `Math.random()` 作为 `key` 来偷懒？我们来看看会发生什么吧。
 
+首先 oldVnode 是这样的：
+```
+[
+  {
+    tag: "item",
+    key: 0.6330715699108844,
+    props: {
+      num: 1
+    }
+  },
+  {
+    tag: "item",
+    key: 0.25104533240710514,
+    props: {
+      num: 2
+    }
+  },
+  {
+    tag: "item",
+    key: 0.4114769152411637,
+    props: {
+      num: 3
+    }
+  }
+];
 
+```
 
 
 
