@@ -346,6 +346,8 @@ function sameVnode (a, b) {
   }
 ];
 ```
-
+更新以后是：
+```
+```
 
 
