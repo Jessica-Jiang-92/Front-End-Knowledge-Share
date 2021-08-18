@@ -348,6 +348,29 @@ function sameVnode (a, b) {
 ```
 更新以后是：
 ```
+[
+  {
+    tag: "item",
++   key: 0.11046018699748683,
+    props: {
++     num: 3
+    }
+  },
+  {
+    tag: "item",
++   key: 0.8549799545696619,
+    props: {
++     num: 2
+    }
+  },
+  {
+    tag: "item",
++   key: 0.18674467938937478,
+    props: {
++     num: 1
+    }
+  }
+];
 ```
 
 
