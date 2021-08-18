@@ -375,7 +375,18 @@ function sameVnode (a, b) {
 可以看到，key 变成了完全全新的 3 个随机数。
 
 上面说到，`diff` 子节点的首尾对比如果都没有命中，就会进入 `key` 的详细对比过程，简单来说，就是利用旧节点的 `key -> index` 的关系建立一个 `map` 映射表，然后用新节点的 `key` 去匹配，如果没找到的话，就会调用 `createElm` 方法 重新建立一个新节点。具体代码如下：
+```
+// 建立旧节点的 key -> index 映射表
+oldKeyToIdx = createKeyToOldIdx(oldCh, oldStartIdx, oldEndIdx);
 
+// 去映射表里找可以复用的 index
+idxInOld = findIdxInOld(newStartVnode, oldCh, oldStartIdx, oldEndIdx);
+// 一定是找不到的，因为新节点的 key 是随机生成的。
+if (isUndef(idxInOld)) {
+  // 完全通过 vnode 新建一个真实的子节点
+  createElm();
+}
+```
 
 
 
