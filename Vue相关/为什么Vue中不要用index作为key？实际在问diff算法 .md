@@ -308,6 +308,7 @@ function sameVnode (a, b) {
 ];
 ```
 
+### 3. 为什么不要用随机数作为key?
 
 
 
