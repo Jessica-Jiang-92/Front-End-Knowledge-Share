@@ -318,7 +318,7 @@ function sameVnode (a, b) {
   :class="`item${num}`"
 />
 ```
-
+其实我听过一种说法，既然官方要求一个 唯一的`key`，是不是可以用 `Math.random()` 作为 `key` 来偷懒？我们来看看会发生什么吧。
 
 
 
