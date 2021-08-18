@@ -372,5 +372,5 @@ function sameVnode (a, b) {
   }
 ];
 ```
-
+可以看到，key 变成了完全全新的 3 个随机数。
 
