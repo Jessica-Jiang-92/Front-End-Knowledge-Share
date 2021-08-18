@@ -310,6 +310,14 @@ function sameVnode (a, b) {
 
 ### 3. 为什么不要用随机数作为key?
 
+```
+<item
+  :key="Math.random()"
+  v-for="(num, index) in nums"
+  :num="num"
+  :class="`item${num}`"
+/>
+```
 
 
 
