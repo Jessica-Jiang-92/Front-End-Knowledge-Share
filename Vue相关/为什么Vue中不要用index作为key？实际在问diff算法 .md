@@ -345,7 +345,6 @@ function sameVnode (a, b) {
     }
   }
 ];
-
 ```
 
 
