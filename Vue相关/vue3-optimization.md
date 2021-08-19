@@ -4,7 +4,7 @@ Vue3正式发布到现在为止已经快一年了，很多项目也都开始往V
 
 - More efficient ref implementation (~260% faster read / ~50% faster write)
 - ~40% faster dependency tracking
-- 
+- ~17% less memory usage
 
 
 
