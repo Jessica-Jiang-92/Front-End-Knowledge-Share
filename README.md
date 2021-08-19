@@ -41,7 +41,7 @@
 - [3. 介绍一下Vue与React之间有什么相同点与不同点](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/Vue%E7%9B%B8%E5%85%B3/%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8BVue%E4%B8%8EReact%E4%B9%8B%E9%97%B4%E6%9C%89%E4%BB%80%E4%B9%88%E7%9B%B8%E5%90%8C%E7%82%B9%E4%B8%8E%E4%B8%8D%E5%90%8C%E7%82%B9.md)
 - [4. 路由模式有哪两种？它们的区别是什么？](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/Vue%E7%9B%B8%E5%85%B3/%E8%B7%AF%E7%94%B1%E6%A8%A1%E5%BC%8F%E6%9C%89%E5%93%AA%E4%B8%A4%E7%A7%8D%EF%BC%9F%E5%AE%83%E4%BB%AC%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F.md)
 - [6. 为什么Vue中不要用index作为key？实际在问diff算法](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/Vue%E7%9B%B8%E5%85%B3/%E4%B8%BA%E4%BB%80%E4%B9%88Vue%E4%B8%AD%E4%B8%8D%E8%A6%81%E7%94%A8index%E4%BD%9C%E4%B8%BAkey%EF%BC%9F%E5%AE%9E%E9%99%85%E5%9C%A8%E9%97%AEdiff%E7%AE%97%E6%B3%95%20.md)
-- [7. Vue3关于响应式部分的优化]()
+- [7. Vue3关于响应式部分的优化](https://github.com/Jessica-Jiang-92/Front-End-Knowledge-Share/blob/master/Vue%E7%9B%B8%E5%85%B3/vue3-optimization.md)
 
 
 ## 🏗️ 4. 前端性能优化与webpack
