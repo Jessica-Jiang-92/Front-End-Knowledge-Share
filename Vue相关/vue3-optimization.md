@@ -10,6 +10,7 @@ Vue3正式发布到现在为止已经快一年了，很多项目也都开始往V
 
 我们知道，相比于 `Vue2`，`Vue3` 做了多方面的优化，其中一部分是数据响应式的实现由 `Object.defineProperty API` 改成了 `Proxy API`。当初 `Vue3` 在宣传的时候，官方宣称在响应式的实现性能上做了优化，那么优化体现在哪些方面呢？有部分小伙伴认为是 `Proxy API` 的性能要优于 `Object.defineProperty` 的，其实不然，实际上 `Proxy` 在性能上是要比 `Object.defineProperty` 差的。可以参考这里[Thoughts on ES6 Proxies Performance](https://thecodebarbarian.com/thoughts-on-es6-proxies-performance)
 
+既然 `Proxy` 慢，为啥 `Vue3` 还是选择了它来实现数据响应式呢？因为 `Proxy` 本质上是对某个对象的劫持，这样它不仅仅可以监听对象某个属性值的变化，还可以监听对象属性的新增和删除；而 `Object.defineProperty` 是给对象的某个已存在的属性添加对应的 `getter` 和 `setter`，所以它只能监听这个属性值的变化，而不能去监听对象属性的新增和删除。
 
 
 
